@@ -18,6 +18,7 @@ if has('vim_starting')
 	NeoBundle 'Shougo/vimshell'
 	NeoBundle 'Shougo/neosnippet'
 	NeoBundle 'Shougo/neosnippet-snippets'
+	NeoBundle 'honza/snipmate-snippets'
 	NeoBundle 'spolu/dwm.vim'
 	NeoBundle 'Shougo/neocomplete.vim'
 	NeoBundle 'miyakogi/seiya.vim'
@@ -66,6 +67,8 @@ imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 " \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
 smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 \ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+let g:neosnippet#snippets_directory='~/.vim/bundle/snipmate-snippets/snippets'
 
 " For conceal markers.
 if has('conceal')
